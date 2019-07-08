@@ -1,0 +1,2 @@
+<!--pages/user/setting/setting.wxml-->
+<component-open-setting authName="{{name}}" bind:openSetting="bindOpenSetting"></component-open-setting>

@@ -1,0 +1,11 @@
+<!--pages/phoneMsg/phoneMsg.wxml-->
+<view class='shouhuo'>基本信息</view>
+<view class='form'>
+  <view class='form_item'>
+    <input type="text" placeholder="姓名" value="{{name}}" bindinput="inputName" />
+  </view>
+  <view class='form_item'>
+    <input type="number" placeholder="手机号" value="{{mobile}}" bindinput="inputMobile" />
+  </view>
+</view>
+<view class='footer' bindtap='goPay'>确认</view>

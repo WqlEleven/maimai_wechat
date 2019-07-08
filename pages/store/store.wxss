@@ -1,0 +1,112 @@
+/* pages/store/store.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+  position: relative;
+  width: 750rpx;
+  height: 100%;
+  overflow: hidden;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 64rpx 32rpx;
+  font-size: 56rpx;
+}
+.box{
+  width: 750rpx;
+  overflow: hidden;
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.store{
+  width: 208rpx;
+  height: 208rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  margin-left:32rpx;
+  margin-bottom: 32rpx;
+  text-align: center;
+  line-height: 208rpx;
+  color: #373737; 
+  float: left;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  color: #622D00; 
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+
+/* 弹窗 */
+.proBg {
+  background-color:#eee;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 750rpx;
+  z-index: 11;
+  display: none;
+}
+.proBg image{
+   width: 48rpx;
+  height: 48rpx;
+  display: block;
+  position: fixed;
+  top: 80rpx;
+  right: 48rpx;
+}
+.box{
+  width: 750rpx;
+  height: 1000rpx;
+}
+.methods{
+  width: 608rpx;
+  min-height: 336rpx;
+  overflow: hidden;
+  border-radius: 24rpx;
+  background-color: #fff;
+  margin:0 0 32rpx 32rpx;
+  padding: 0 32rpx 0rpx 48rpx;
+}
+.m_men{
+  line-height: 60rpx;
+  margin: 40rpx 0 20rpx 0 ;
+}
+.m_mens{
+  font-size: 40rpx;
+  color: #666666;
+}
+.phone{
+  font-size: 40rpx;
+  color: #666666;
+  margin-top: 20rpx;
+}
+.blank{
+  height: 200rpx;
+}
+.block{
+  display: block;
+}
+.none{
+  display: none;
+}
+.on {
+  background-color:#F1D500;
+  color: #622D00;
+}

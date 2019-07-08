@@ -1,0 +1,77 @@
+/* pages/editAddress/editAddress.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.form .form_item{
+  height: 124rpx;
+  line-height: 124rpx;
+  color: #333;
+  border-bottom: 1rpx solid #ccc;
+  width: 688rpx;
+  margin-left: 32rpx; 
+}
+.form .form_items{
+  /* width: rpx; */
+  min-height: 124rpx;
+  line-height: 124rpx;
+  color: #333;
+  border-bottom: 1rpx solid #ccc;
+  width: 684rpx;
+  margin-left: 32rpx;
+  position: relative; 
+}
+.picker{
+  width: 630rpx;
+}
+.form .form_itemm{
+  padding-top:30rpx; 
+  padding-bottom: 24rpx;
+  min-height: 70rpx;
+  line-height: 50rpx;
+  color: #333;
+  border-bottom: 1rpx solid #ccc;
+  width: 688rpx;
+  margin-left: 32rpx;
+}
+picker{
+  position: relative; 
+
+}
+.gt{
+  height: 64rpx;
+  width: 64rpx;
+  position: absolute;
+  top: 32rpx;
+  right: 0;
+}
+.form .form_item input{
+  height: 124rpx;
+  line-height: 124rpx;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  color: #622D00;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+ button::after {
+  border: none
+}

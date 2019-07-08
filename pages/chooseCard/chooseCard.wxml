@@ -1,0 +1,19 @@
+<!--pages/chooseCard/chooseCard.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit="true">
+  <view class='shouhuo'>选择卡</view>
+  <view class='card' wx:for='{{list}}' wx:key='list' wx:if='{{params.card == item.code}}'>
+    <image src='../../images/card.png'></image>
+    <text class='balance'>当前余额</text>
+    <text class='money'>¥{{item.money}}</text>
+    <text class='cardId'>{{item.card}}</text>
+  </view>
+  <button form-type="submit" class="footer">去支付</button>
+  <!-- //弹窗 -->
+  <view class="proBg" style='display:none;'>
+    <view class='notFuds'>
+      <image src='../../images/danger.png'></image>
+      <text class='msg'>余额不足，请选择其他付款方式</text>
+      <text class='back'>返回</text>
+    </view>
+  </view>
+</form>

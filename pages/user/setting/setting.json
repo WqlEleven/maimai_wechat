@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "打开设置页",
+  "usingComponents": {
+    "component-open-setting": "/components/openSetting/openSetting"
+  }
+}

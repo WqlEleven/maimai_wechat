@@ -1,0 +1,2 @@
+<!--pages/user/auth/auth.wxml-->
+<component-user-auth appName="{{name}}" bind:myGetUserInfo="bindGetUserInfo"></component-user-auth>

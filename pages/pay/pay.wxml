@@ -1,0 +1,29 @@
+<!--pages/pay/pay.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit="true">
+  <view class='shouhuo'>选择支付方式</view>
+  <view class='top'>
+    <view class='left'>
+      <image src='{{info.picture}}'></image>
+    </view>
+    <view class='right'>
+      <text class='name'>{{info.name}}</text>
+      <text class='price'>¥{{price}}</text>
+      <text class='num'>x {{params.num}}</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <text class='freight'>运费:{{info.freight}}</text>
+    <text class='money'>合计:<text class='red'> ￥{{total}}</text></text>
+  </view>
+  <view class='w'>
+    <view class="weixin {{payType == 1 ? 'on' :''}}" bindtap='payTap' data-type='1'>微信支付
+      <!-- <view class='pay'>微信支付</view> -->
+      <!-- <view class="packet {{payType == 1 ? 'on' :''}}">使用微信支付领取红包</view> -->
+    </view>
+    <view class="card {{payType == 2 ? 'on' :''}}" bindtap='payTap' data-type='2'>悦颐卡在线付款</view>
+    <view class="daodian {{payType == 3 ? 'on' :''}} {{deliver == 1?'deliver':''}}" bindtap='payTap' data-type='3'>到店付款</view>
+    <!-- <view class="huodao {{payType == 4 ? 'on' :''}}" bindtap='payTap' data-type='4'>货到付款</view> -->
+  </view>
+  <view class='blank'></view>
+  <button form-type="submit" id="footer">确定</button>
+</form>

@@ -1,0 +1,9 @@
+<!--pages/storeDetail/storeDetail.wxml-->
+<view class='shouhuo'>{{info.name}}</view>
+<view class="methods {{selectIndex == index ? 'on' :''}}" bindtap='activeTap' wx:for='{{list}}' wx:key='list' data-id='{{item.id}}' data-index='{{index}}'>
+  <view class='m_men'>{{item.name}}</view>
+  <view class='m_mens' style="color:{{bgcolor}};">{{item.address}}</view>
+  <view class='phone' style="color:{{bgcolor}};">{{item.phone}}</view>
+</view>
+<view class='blank'></view>
+<view class='footer' bindtap='storeDetail'>下一步</view>

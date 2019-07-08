@@ -1,0 +1,21 @@
+/* pages/question/question.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  color: #333333;
+}
+.shouhuo{
+  width: 392rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.content{
+  display: block;
+  width: 688rpx;
+  height: 952rpx;
+  margin-left: 32rpx;
+  font-size: 40rpx;
+  color: #666666;
+}

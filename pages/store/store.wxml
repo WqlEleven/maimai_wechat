@@ -1,0 +1,23 @@
+<!--pages/store/store.wxml-->
+<view class='shouhuo'>选择门店</view>
+<view class='c'>
+  <view class="store {{selectIndex == index ? 'on' :''}}" bindtap='activeTap' wx:for='{{list}}' wx:key='list' data-id='{{item.id}}' data-index='{{index}}'>{{item.name}}</view>
+</view>
+<!-- <view class='footer' bindtap='storeDetail'>下一步</view> -->
+<!-- //弹窗 -->
+<view class="proBg  {{block == 0 ? 'none' :'block'}}">
+  <view class="shouhuo">{{info.name}}</view>
+  <image src='../../images/close.png' bindtap='none'></image>
+  <scroll-view scroll-y class='box'>
+    <view class="methods {{selectIndexs == index ? 'on' :''}}" bindtap='activeTaps' wx:for='{{lists}}' wx:key='lists' data-id='{{item.id}}' data-index='{{index}}'>
+      <view class='m_men'>{{item.name}}</view>
+      <view class="m_mens {{selectIndexs == index ? 'on' :''}}">{{item.address}}
+      </view>
+      <view class="phone {{selectIndexs == index ? 'on' :''}}">{{item.phone}}</view>
+    </view>
+   
+    <view class='blank'></view>
+  </scroll-view>
+
+  <view class='footer' bindtap='storeDetails'>下一步</view>
+</view>

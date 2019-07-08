@@ -1,0 +1,11 @@
+<!--pages/cardMessage/cardMessage.wxml-->
+<view class='shouhuo'>悦颐消费卡号</view>
+<view class='form'>
+  <!-- <view class='form_item'>
+    <input type="text" placeholder="姓名" value="{{name}}" bindinput="inputName" />
+  </view> -->
+  <view class='form_item'>
+    <input type="idcard" placeholder="消费卡号" value="{{card}}" bindinput="inputCard" />
+  </view>
+</view>
+<view class='footer' bindtap='verifyCard'>确认</view>

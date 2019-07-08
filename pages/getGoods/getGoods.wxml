@@ -1,0 +1,10 @@
+<!--pages/chooseAddress/chooseAddress.wxml-->
+<view class='shouhuo'>选择收货方式</view>
+<view class="methods {{distribution == 1? 'on' :''}}" bindtap='deliverGoods'>
+  <view class='m_men'>送货上门</view>
+  <view class="m_mens {{distribution == 1? 'on' :''}}">凡是长寿俱乐部直营店10公里以内的用户门店有货72小时内送达</view>
+</view>
+<view class="methods {{distribution == 2? 'on' :''}}" bindtap='store'>
+ <view class='m_men'>到店自提</view>
+  <view class="m_mens {{distribution == 2? 'on' :''}}">您可以到附近门店自提</view>
+</view>

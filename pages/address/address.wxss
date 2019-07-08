@@ -1,0 +1,157 @@
+/* pages/address/address.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.address{
+  width: 530rpx;
+  height: 392rpx;
+  display: block;
+  margin-top: 200rpx;
+  margin-left: 110rpx; 
+}
+.qin{
+  height: 60rpx;
+  color: #848484;
+  text-align: center;
+  margin-top: 54rpx;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500;
+  color: #622D00; 
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+
+/**/
+
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 32rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.scoll{
+  width: 750rpx;
+  height: 861rpx;
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.methods{
+  width: 608rpx;
+  min-height: 278rpx;
+  overflow: hidden;
+  border-radius: 24rpx;
+  background-color: #fff;
+  margin:0 0 32rpx 32rpx;
+  padding: 48rpx 32rpx 42rpx 48rpx;
+  position: relative;
+}
+.name{
+  width: 240rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.phone{
+  height: 56rpx;
+  line-height: 56rpx;
+  color: #666666;
+  font-size: 40rpx;
+  margin: 34rpx 0 16rpx;
+}
+.p_address{
+  width: 568rpx;
+  font-size: 40rpx;
+  color: #666666;
+}
+ .handle{
+  overflow: hidden;
+  position: absolute;
+  top: 48rpx;
+  right: 32rpx;
+  color: #0C70E4;
+  font-size: 40rpx;
+}
+.methods .handle .left,.methods .handle .right{
+  float: left;
+}
+.methods .handle .left text,.methods .handle .right text{
+  display: block;
+  float: left;
+}
+.icon{
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: 12rpx;
+  display: block;
+  float: left;
+  margin-top: 8rpx;
+}
+.icon1{
+  width: 38rpx;
+  height: 38rpx;
+  margin-left: 12rpx;
+  display: none;
+  float: left;
+  margin-top: 8rpx;
+}
+ .right{
+  color: #333333;
+  width: 130rpx;
+  margin-left: 48rpx;
+}
+.add{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  color: #666666; 
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: -2rpx;
+}
+.sure{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500;
+  color: #622D00; 
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom:100rpx;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+.on {
+  background-color:#F1D500;
+  color: #622D00;
+}
+.onColor{
+  color: #fff;
+}
+.none{
+  display: none;
+}
+.show{
+  display: block;
+}

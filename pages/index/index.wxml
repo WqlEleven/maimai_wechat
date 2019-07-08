@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<swiper class="swiperClass" circular="true" bindchange="bindchange" current="{{current}}" vertical>
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <swiper-item item-id="{{item.id}}">
+      <swiper class="slide-image {{current == index ? 'active' : 'quiet'}}" mode='aspectFill' bindtap="btnclick" data-id="{{item.id}}" circular="true" indicator-dots="true">
+        <swiper-item wx:for="{{item.picture_list}}" wx:key="{{index}}" wx:for-item="picture" wx:for-index="{{index_p}}" style=" min-height: 600rpx;">
+          <image src='{{picture}}'>
+            <view class='yushou' wx:if='{{item.is_sell == 1}}'>预售</view>
+          </image>
+        </swiper-item>
+      </swiper>
+      <view class='name' wx:if="{{current == index}}">{{item.name}}</view>
+      <view class='prices' wx:if='{{item.price_min == item.price_max}}'>¥{{item.price_min}}</view>
+      <view class='prices' wx:else>¥{{item.price_min}} - ¥{{item.price_max}}</view>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='footer' bindtap='buyNow' wx:if="{{show}}">立即购买</view>
+<view class='noStock' wx:else>已抢光</view>

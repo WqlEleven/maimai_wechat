@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/index/index",
+    "pages/user/auth/auth",
+    "pages/user/bind/bind",
+    "pages/goodsDetail/goodsDetail",
+    "pages/chooseSize/chooseSize",
+    "pages/getGoods/getGoods",
+    "pages/address/address",
+    "pages/editAddress/editAddress",
+    "pages/AddAddress/AddAddress",
+    "pages/pay/pay",
+    "pages/cardMessage/cardMessage",
+    "pages/verifyCard/verifyCard",
+    "pages/question/question",
+    "pages/chooseCard/chooseCard",
+    "pages/paySueccess/paySueccess",
+    "pages/store/store",
+    "pages/storeDetail/storeDetail",
+    "pages/wxPaySucess/wxPaySucess",
+    "pages/phoneMsg/phoneMsg",
+    "pages/payCard/payCard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "长寿麦麦",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于计算距离"
+    }
+  }
+}

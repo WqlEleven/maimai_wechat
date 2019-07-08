@@ -1,0 +1,126 @@
+/* pages/verifyCard/verifyCard.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+  position: relative;
+}
+.shouhuo{
+  width: 392rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.pnoneNum{
+  overflow: hidden;
+}
+.phone{
+  width: 350rpx;
+  height: 66rpx;
+  font-size: 48rpx;
+  margin-left: 32rpx;
+  line-height: 66rpx;
+  float: left;
+}
+.verifyCard{
+  float: right;
+  color: #0C70E4;
+  width: 220rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-right: 32rpx;
+  margin-top: 4rpx;
+}
+.verifyCard2{
+  float: right;
+  color: #0C70E4;
+  width: 142rpx;
+  height: 60rpx;
+  text-align: right;
+  line-height: 60rpx;
+  margin-right: 8rpx;
+  margin-top: 4rpx;
+  display: none;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.iptbox{
+  width: 80rpx;
+  height: 96rpx;
+  border-bottom:1rpx solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ipt{
+  width: 0;
+  height: 0;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  margin-top: 64rpx;
+  margin-left: 112rpx;
+  color: #622D00;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+.footer1{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  margin-top: 64rpx;
+  margin-left: 112rpx;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+  display: none;
+  color: #622D00;
+}
+.question{
+  width: 750rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 40rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 32rpx;
+}
+.remind{
+  width: 688rpx;
+  height: 274rpx;
+  line-height: 274rpx;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 16rpx;
+  position: absolute;
+  top: 190rpx;
+  left: 32rpx;
+}
+.remind image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 46rpx;
+  right: 40rpx;
+  z-index: 1;
+}
+.none{
+  display: none;
+}
+.show{
+  display: block;
+}

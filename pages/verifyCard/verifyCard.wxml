@@ -1,0 +1,22 @@
+<!--pages/verifyCard/verifyCard.wxml-->
+<view class='shouhuo'>验证码发送至</view>
+<view class='pnoneNum'>
+  <view class='phone'>{{params.mobile}}</view>
+  <view class="verifyCard {{distribution == 1? 'none' :''}}" bindtap='Click'>获取验证码</view>
+  <view class="verifyCard2 {{distribution == 1? 'show' :''}}">（{{seconds}}s）</view>
+</view>
+<form bindsubmit="formSubmit">
+  <view class='content'>
+    <block wx:for="{{length}}" wx:key="item">
+      <input type="number" class='iptbox' value="{{code.length>=index+1?code[index]:''}}" disabled password='{{ispassword}}' catchtap='codeTap'></input>
+    </block>
+  </view>
+  <input type="number" name="password" password="{{true}}" class='ipt' maxlength="{{length}}" focus="{{isFocus}}" bindinput="inputCode"></input>
+</form>
+<view class="footer" bindtap='chooseCard'>下一步</view>
+<!-- <view class="footer1 {{continues == 1? 'show' :''}}" bindtap='chooseCard'>下一步</view> -->
+<view class='question' bindtap='question'>收不到验证码?</view>
+<!-- <view class="remind {{nones == 1? 'none' :''}}">
+  <image src='../../images/out.png' catchtap='nones'></image>
+    验证码错误，请重新输入
+ </view> -->

@@ -1,0 +1,58 @@
+/* pages/storeDetail/storeDetail.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 64rpx 32rpx;
+  font-size: 56rpx;
+}
+.methods{
+  width: 608rpx;
+  min-height: 336rpx;
+  overflow: hidden;
+  border-radius: 24rpx;
+  background-color: #fff;
+  margin:0 0 32rpx 32rpx;
+  padding: 0 32rpx 40rpx 48rpx;
+}
+.blank{
+  height: 200rpx;
+}
+.on {
+  background-color:#F1D500;
+  color: #622D00;
+}
+.m_men{
+  /* height: 60rpx; */
+  line-height: 60rpx;
+  margin: 48rpx 0 20rpx 0 ;
+}
+.m_mens{
+  font-size: 40rpx;
+  color: #666666;
+}
+.phone{
+  font-size: 40rpx;
+  color: #666666;
+  margin-top: 20rpx;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  color: #622D00; 
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}

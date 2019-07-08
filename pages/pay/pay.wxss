@@ -1,0 +1,141 @@
+/* pages/pay/pay.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.top{
+  width: 750rpx;
+  height:215rpx;
+  display: flex;
+  overflow: hidden;
+}
+.left{
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 16rpx; 
+  margin-top: 36rpx;
+  margin-left: 36rpx;
+  padding: 16rpx;
+  background-color: #fff;
+}
+.left image{
+  width: 112rpx;
+  height: 112rpx;
+  display: block;
+}
+.right{
+  width: 490rpx;
+  margin-top: 34rpx;
+  margin-left: 42rpx;
+  position: relative;
+}
+.right text{
+  display: block;
+}
+.right .name{
+  width: 452rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ .freight{
+  width: 452rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 16rpx;
+}
+.right .price{
+  height: 74rpx;
+  line-height: 74rpx;
+  margin-top: 16rpx; 
+}
+.right .num{
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: right;
+  position: absolute;
+  top: 80rpx;
+  right: 0;
+}
+ .money{
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: right;
+  margin-left:48rpx;
+}
+.bottom{
+  float: right;
+  margin-right: 32rpx;
+  margin-bottom: 32rpx;
+}
+ .red{
+  display: inline-block;
+  color: #E40F0F;
+}
+.w > view{
+  width: 650rpx;
+  height: 208rpx;
+  margin: 32rpx 0 0 32rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  padding-left:38rpx; 
+  line-height: 208rpx;
+  overflow: hidden;
+}
+.w .weixin{
+   /* line-height: normal; */
+   margin-top: 44rpx;
+}
+.weixin .pay{
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 42rpx 0 2rpx;
+}
+ .packet{
+  font-size: 40rpx;
+  color: #E40F0F;
+}
+.blank{
+  height: 200rpx;
+}
+/* 购买 */
+#footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  color: #622D00;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+
+ button::after {
+  border: none
+}
+.w .on {
+  background-color:#F1D500;
+  color: #622D00;
+}
+.w .deliver{
+ display: none;   
+}

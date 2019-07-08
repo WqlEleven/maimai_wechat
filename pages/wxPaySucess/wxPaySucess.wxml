@@ -1,0 +1,8 @@
+<!--pages/wxPaySucess/wxPaySucess.wxml-->
+<image class='images' src='../../images/paySucess.png'></image>
+<text class='text'>支付成功</text>
+<text class='money'>¥{{info.total}}</text>
+<!-- <view class='middle'> 
+  <image src='../../images/hongbao.png'></image>
+</view> -->
+<view class='footer' bindtap='goIndex'>完成</view>

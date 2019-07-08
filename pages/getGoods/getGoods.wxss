@@ -1,0 +1,37 @@
+/* pages/chooseAddress/chooseAddress.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 64rpx 32rpx;
+  font-size: 56rpx;
+}
+.methods{
+  width: 608rpx;
+  height: 272rpx;
+  overflow: hidden;
+  border-radius: 24rpx;
+  background-color: #fff;
+  margin:0 0 32rpx 32rpx;
+  padding: 0 32rpx 0 48rpx;
+}
+
+.m_men{
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 48rpx 0 24rpx 0 ;
+}
+.m_mens{
+  font-size: 40rpx;
+  color: #666666;
+}
+.on {
+  background-color:#F1D500;
+  color: #622D00;
+}

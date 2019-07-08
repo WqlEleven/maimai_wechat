@@ -1,0 +1,24 @@
+<!--pages/AddAddress/AddAddress.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit="true">
+  <view class='shouhuo'>添加地址</view>
+  <view class='form'>
+    <view class='form_item'>
+      <input type="text" name="name" placeholder="姓名" value="" />
+    </view>
+    <view class='form_item'>
+      <input type="number" name="mobile" placeholder="手机号" value="" />
+    </view>
+    <view class='form_items'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="picker">
+          {{region[0]}} {{region[1]}} {{region[2]}}
+        </view> 
+      </picker>
+      <image class='gt' src='../../images/right.png'></image>
+    </view>
+    <view class='form_itemm'>
+      <textarea style='height:40rpx; width:616rpx' type="text" name="address" placeholder-class="input-placeholder" value="" placeholder="详细地址" auto-height></textarea>
+    </view>
+  </view>
+  <button class="footer" formType="submit">保存</button>
+</form>

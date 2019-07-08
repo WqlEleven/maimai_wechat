@@ -1,0 +1,30 @@
+<!--pages/address/address.wxml-->
+<view wx:if="{{list.length == 0}}">
+  <image class='address' src='../../images/Address.png'></image>
+  <view class='qin'>亲，你还没有添加地址哦～</view>
+  <view class='footer' bindtap='addressAdd'> + 添加新地址</view>
+</view>
+<view wx:else>
+  <view class='shouhuo'>选择地址</view>
+  <scroll-view scroll-y class='scoll'>
+    <view class="methods {{addressIndex == index ? 'on' :''}}" bindtap='selectTap' wx:for='{{list}}' wx:key='list' data-index='{{index}}' data-id='{{item.id}}'>
+      <view class="name {{addressIndex == index ? 'on' :''}}">{{item.name}}</view>
+      <view class="phone {{addressIndex == index ? 'on' :''}}">{{item.mobile}}</view>
+      <view class="p_address {{addressIndex == index ? 'on' :''}}">{{item.province}}{{item.city}}{{item.country}}{{item.address}}</view>
+      <view class="handle {{addressIndex == index ? 'onColor' :''}}">
+        <view class='left' catchtap='addressEdit' data-id='{{item.id}}'>
+          <text>修改</text>
+            <image class="icon  {{addressIndex == index ? 'none' :''}}" src='../../images/edit.png'></image>
+            <image class="icon1  {{addressIndex == index ? 'show' :''}}" src='../../images/edit1.png'></image>
+        </view>
+        <view class="right  {{addressIndex == index ? 'onColor' :''}}" catchtap='addressDelete' data-id='{{item.id}}'>
+          <text>删除</text>
+          <image class="icon  {{addressIndex == index ? 'none' :''}}" src='../../images/delete.png'></image>
+          <image class="icon1  {{addressIndex == index ? 'show' :''}}" src='../../images/delete1.png'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='sure' bindtap='pay'>确认</view>
+  <view class='add' bindtap='addressAdd'>+ 添加新地址</view>
+</view>

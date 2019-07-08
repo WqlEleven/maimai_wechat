@@ -1,0 +1,101 @@
+/**index.wxss**/
+
+page {
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333;
+  position: relative;
+}
+.swiperClass {
+  width: 100%;
+  margin: 0;
+  min-height:992rpx;
+}
+.slide-image {
+  min-height:752rpx;
+}
+.slide-image image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+} 
+text {
+  display: block;
+}
+.yushou {
+  width: 148rpx;
+  height: 96rpx;
+  background-color: #e40f0f;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: -67rpx;
+  right: -45rpx;
+  padding-top: 80rpx;
+  padding-right: 24rpx;
+} 
+.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.quiet {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}
+
+.name {
+  /* width: 100%; */
+  margin:0 40rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size: 46rpx;
+  margin-top: 16rpx;
+  text-align: left;
+}
+
+.prices {
+  width: 100%;
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 52rpx;
+  margin-top: 90rpx;
+  text-align: center;
+  color: #e40f0f;
+}
+
+.footer {
+  width: 528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color: #f1d500;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  bottom: 48rpx;
+  left: 118rpx;
+  color: #643000; 
+  box-shadow: 0 30rpx 60rpx -20rpx #f9db54;
+}
+.noStock{
+   width: 528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color: #ccc;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  bottom: 48rpx;
+  left: 118rpx;
+  color: #643000; 
+  box-shadow: 0 30rpx 60rpx -20rpx #eee;
+  pointer-events: none; 
+}
+button::after {
+  border: none
+}

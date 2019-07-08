@@ -1,0 +1,119 @@
+/* pages/chooseCard/chooseCard.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+  position: relative;
+  width: 750rpx;
+  height: 100%;
+  overflow: hidden;
+}
+.shouhuo{
+  width: 392rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 48rpx 32rpx;
+  font-size: 56rpx;
+}
+.card{
+  width: 688rpx;
+  height: 352rpx;
+  border-radius: 24rpx;
+  margin-left: 32rpx;
+  position: relative;
+}
+.card image{
+  width: 100%;
+  height: 100%;
+}
+.balance{
+  display: block;
+  height: 56rpx;
+  line-break: 56rpx;
+  font-size: 40rpx;
+  color: #FFFFFF;
+  position: absolute;
+  top: 48rpx;
+  left: 50rpx;
+  opacity: .5042;
+}
+.money{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #fff;
+  font-size: 64rpx;
+  position: absolute;
+  left: 50rpx;
+  top: 104rpx;
+  font-weight: bold;
+}
+.cardId{
+  height: 74rpx;
+  line-height: 74rpx;
+  color: #fff;
+  font-size: 52rpx;
+  position: absolute;
+  left: 50rpx;
+  bottom: 36rpx;
+  font-weight: bold;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  bottom: 48rpx;
+  color: #622D00;
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}
+/* 余额不足弹窗 */
+.proBg {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+}
+.notFuds{
+  position: absolute;
+  width: 688rpx;
+  height: 448rpx;
+  border-radius: 16rpx;
+  top: 340rpx;
+  left: 32rpx;
+  background-color: #fff;
+}
+.notFuds image{
+  display: block;
+  width: 108rpx;
+  height: 108rpx;
+  margin-top:64rpx;
+  margin-left: 290rpx; 
+  margin-bottom: 32rpx;
+}
+.notFuds .msg{
+  display: block;
+  width: 688rpx;
+  height: 56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  font-size: 40rpx;
+}
+.notFuds .back{
+  display: block;
+  width: 224rpx;
+  height: 112rpx;
+  margin-top: 32rpx;
+  margin-left: 232rpx;
+  line-height: 112rpx;
+  text-align: center;
+  border-radius: 16rpx;
+  border: 1rpx solid #F1D500;
+}

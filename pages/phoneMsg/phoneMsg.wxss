@@ -1,0 +1,40 @@
+/* pages/phoneMsg/phoneMsg.wxss */
+page{
+  background-color: #eee;
+  font-family: PingFang-SC-Bold;
+  font-size: 44rpx;
+  color: #333333;
+}
+.shouhuo{
+  width: 336rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 64rpx 0 16rpx 32rpx;
+  font-size: 56rpx;
+}
+.form .form_item{
+  height: 124rpx;
+  line-height: 124rpx;
+  color: #666666;
+  border-bottom: 1rpx solid #ccc;
+  width: 688rpx;
+  margin-left: 32rpx; 
+}
+.form .form_item input{
+  height: 124rpx;
+  line-height: 124rpx;
+}
+.footer{
+  width:528rpx;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  background-color:#F1D500 ;
+  font-size: 44rpx;
+  border-radius: 56rpx;
+  position: fixed;
+  left: 112rpx;
+  top: 474rpx;
+  color: #622D00; 
+  box-shadow: 0 30rpx 60rpx -20rpx #F9DB54;
+}

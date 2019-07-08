@@ -1,0 +1,25 @@
+<!--pages/editAddress/editAddress.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit="true">
+  <view class='shouhuo'>修改地址</view>
+  <view class='form'>
+    <view class='form_item'>
+      <input type="text" name="name" placeholder="姓名" value="{{info.name}}" />
+    </view>
+    <view class='form_item'>
+      <input type="number" name="mobile" placeholder="手机号" value="{{info.mobile}}" />
+    </view>
+    <view class='form_items'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <view class="picker">
+          {{region[0]}} {{region[1]}} {{region[2]}}
+        </view>
+         
+      </picker>
+      <image class='gt' src='../../images/right.png'></image>
+    </view>
+    <view class='form_itemm'>
+      <textarea style='height:40rpx; width:616rpx' type="text" name="address" bindinput="addressInput" placeholder-class="input-placeholder" value="{{info.address}}" placeholder="详细地址" auto-height></textarea>
+    </view>
+  </view>
+  <button class="footer" formType="submit">保存</button>
+</form>

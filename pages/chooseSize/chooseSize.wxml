@@ -1,0 +1,36 @@
+<!--pages/chooseSize/chooseSize.wxml-->
+<view wx:if="{{color_list.length > 0}}">
+  <view class='choose'>选择颜色</view>
+  <view class='color'>
+    <block wx:for="{{color_list}}" wx:key="color_list">
+      <view class="f_color {{colorIndex == index ? 'none' :''}} {{!item.can_select ? 'pointer' :''}}" bindtap='colorTap' data-index='{{index}}'>
+        <view class='img'>
+          <image src='{{item.picture}}'></image>
+        </view>
+        <text>{{item.name}}</text>
+      </view>
+      <view class="image_click {{colorIndex == index ? 'show' :''}}">
+        <image src='{{item.picture}}'></image>
+      </view>
+    </block>
+  </view>
+</view>
+<view wx:if="{{size_list.length > 0}}">
+  <view class='choose'>选择尺码</view>
+  <view class='size'>
+    <view wx:for="{{size_list}}" wx:key="size_list" class="f_sizer {{sizeIndex == index ? 'on' :''}} {{!item.can_select ? 'pointer' :''}}" bindtap='sizeTap' data-index='{{index}}'>{{item.name}}</view>
+  </view>
+</view>
+<view>
+  <view class='choose'>选择数量</view>
+  <view class='num'>
+    <view wx:for="{{num_list}}" wx:key="num" class="f_num {{numIndex == index? 'on' :''}}" bindtap='numTap' data-index='{{index}}'>{{item}}</view>
+    <input style='width:254rpx;height:112rpx;' class="f_num" placeholder='自定义' bindinput='inputNum' type='number' value='{{input_num == 0 ? "" : input_num}}'></input>
+  </view>
+</view>
+<view class='blank'></view>
+<!-- 立即购买 -->
+<view class='footer' bindtap='buyNow'>
+  <view class='f_left'>¥{{money}}</view>
+  <view class='f_right'>下一步</view>
+</view>

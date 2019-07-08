@@ -1,0 +1,7 @@
+<!--pages/paySueccess/paySueccess.wxml-->
+<image class='images' src='../../images/paySucess.png'></image>
+<text class='text'>预购成功</text>
+<view class='middle'> 
+  <text>我们会以电话或短信的方式与您取得联系 请保持电话畅通</text> 
+</view>
+<view class='footer' bindtap='goIndex'>完成</view>
